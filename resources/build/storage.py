@@ -132,5 +132,5 @@ class build_storage:
 
     def trim_handling(self):
         if self.constants.apfs_trim_timeout is False:
-            print(f"- Disabling APFS TRIM timeout")
+            printf("- Disabling APFS TRIM timeout")
             self.config["Kernel"]["Quirks"]["SetApfsTrimTimeout"] = 0
